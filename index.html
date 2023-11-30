@@ -3,35 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página</title>
+    <title>Livraria da Cultura</title>
+    <link href="node_modules\bootstrap-icons\font\bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)">Minha página</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Sobre</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Produtos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Contato</a>
-                </li>
+    <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Página inicial</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Produtos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Preços</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sobre</a></li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Digite aqui">
-                <button class="btn btn-primary" type="button">Pesquisar</button>
-            </form>
-            </div>
+            <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Cadastro</a></li>
+            </ul>
         </div>
         </nav>
+
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">Livraria da Cultura</span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Pesquise aqui" aria-label="Search">
+            </form>
+        </div>
+        </header>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Não perca as novidades!</h1>
+                <p class="col-lg-10 fs-4">Inscreva-se em nossa newsletter para acompanhar as promoções, lançamentos e eventos.</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Senha</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Lembre-se de mim
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Cadastre-me</button>
+                    <hr class="my-4">
+                    <small class="text-body-secondary">Ao clicar em Cadastre-me, você está concordando com nossos termos de uso.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Destaques do mês</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="fw-bold text-body-emphasis">Lançamentos e queridinhos dos nossos leitores</h2>
+                <p class="text-body-secondary">Confira desde dicas de presentes e novidades na nossa loja até livros em promoções relâmpago!</p>
+                <a href="#" class="btn btn-primary btn-lg">Ver todos</a>
+            </div>
+
+            <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3" width="1em" height="1em">
+                        <i class="bi-book" ></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Indicações</h4>
+                    <p class="text-body-secondary">Livros para presentear seus entes queridos neste Natal.</p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <i class="bi-cart-plus"></i>
+                    </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Novidades</h4>
+                <p class="text-body-secondary">Lançamentos de coleções completas das editoras favoritas.</p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <i class="bi-cash-coin"></i>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Promoção</h4>
+                <p class="text-body-secondary">Livros clássicos e/ou usados a partir de R$10,00.</p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <i class="bi-bookshelf"></i>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Mais vendidos</h4>
+                <p class="text-body-secondary">Os preferidos do mês, de ficção científica a romances.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Editora Morro Branco</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Editora Morro Branco</text></svg>
+                <div class="card-body">
+                    <p class="card-text">A Casa no Mar Cerúleo, A Passa-Espelhos, Piranesi, O Mar Sem Estrelas, O Circo da Noite e mais.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                    </div>
+                    <small class="text-body-secondary">89019340298 livros</small>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Companhia das Letras</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Companhia das Letras</text></svg>
+                    <div class="card-body">
+                        <p class="card-text">Djamila Ribeiro, George Orwell, Raphael Montes, Jorge Amado, Machado de Assis, Liev Tolstói e outros autores.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                            </div>
+                            <small class="text-body-secondary">459 livros</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Editora Aleph</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Editora Aleph</text></svg>
+                    <div class="card-body">
+                        <p class="card-text">Laranja Mecânica, A Cidade e as Estrelas, Uma Odisseia no Espaço, O Astronauta, 1984, Duna, Fundação e outros.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                            </div>
+                            <small class="text-body-secondary">107 livros</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <i class="bi-bootstrap"></i>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Livraria da Cultura, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
